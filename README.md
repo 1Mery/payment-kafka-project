@@ -32,3 +32,6 @@ Tamamı Spring Boot + Kafka + Cloud Stream ile yapılmış temiz bir mini mikros
 
 Bu istek atıldığında Payment-Service Kafka’ya bir event gönderiyor ve Notification-Service event'i yakalayıp logluyor.
 
+<img width="1703" height="129" alt="image" src="https://github.com/user-attachments/assets/3390bfde-1cc0-468c-8b67-f3428f892627" />
+
+
