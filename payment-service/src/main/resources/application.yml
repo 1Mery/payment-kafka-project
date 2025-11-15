@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: payment-service
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        paymentEvents-out-0:   #StreamBridge ile publish edecegimiz channel
+          destination: payment-events  #Kafka topic name
+          content-type: application/json
+server:
+  port: 8084

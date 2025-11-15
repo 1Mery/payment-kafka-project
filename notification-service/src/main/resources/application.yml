@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: notification-service
+
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        paymentEvents-in-0:   #consumer binding name
+          destination: payment-events  #payment-service'in gönderdigi topic
+          group: notification-group  #consumer group
+          content-type: application/json
